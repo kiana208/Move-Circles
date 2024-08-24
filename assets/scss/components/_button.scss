@@ -1,0 +1,24 @@
+.content {
+  .repeat {
+    font-size: 40px;
+  }
+  .btns {
+    .btn {
+      width: 80px;
+      &:first-child {
+        background-color: map-get($colors, clr-btn-2);
+        color: map-get($colors, clr-primary);
+        @include btn-style;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      &:last-child {
+        background-color: map-get($colors, clr-btn-2);
+        color: map-get($colors, clr-primary);
+        @include btn-style;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+}

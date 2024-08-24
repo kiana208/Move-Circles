@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom plugin & css style -->
+    <link rel="stylesheet" href="./assets/plugin/bootstrap-5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/scss/master.min.css" />
+    <title>move circles</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center text-white">Start to move numbers!</h1>
+      <div class="shapes d-flex justify-content-center align-items-center gap-3 mt-5 flex-wrap"></div>
+      <div class="content d-flex justify-content-center flex-column align-items-center gap-3 mt-5">
+        <div class="inputs d-flex flex-column flex-sm-row justify-content-center align-items-center gap-5">
+          <input type="number" class="input-box flex-grow-0 flex-sm-grow-1 px-3 py-2 rounded-pill border-0" placeholder="Number" id="numberInput" />
+          <input type="number" class="input-box flex-grow-0 flex-sm-grow-1 px-3 py-2 rounded-pill border-0" placeholder="Step" id="stepInput" />
+        </div>
+        <div class="btns d-flex gap-3 mt-5">
+          <button type="button" class="btn d-flex align-items-center justify-content-around" id="shiftUp"> Up </button>
+          <button type="button" class="btn d-flex align-items-center justify-content-around" id="shiftUp"> down </button>
+        </div>
+        <button class="btn repeat" type="button" onclick="reload()"> 🔄️ </button>
+      </div>
+    </div>
+    <!-- script files -->
+    <script src="./assets/plugin/bootstrap-5.3.3/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

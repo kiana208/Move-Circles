@@ -1,0 +1,31 @@
+.shapes {
+  .circle {
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    color: aliceblue;
+    background-color: #d3abcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.content {
+  .inputs {
+    .input-box {
+      &::placeholder {
+        font-weight: 600;
+        color: map-get($colors, clr-secondary);
+      }
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &:focus {
+        border: 1px solid map-get($colors, clr-secondary);
+      }
+    }
+  }
+}
+

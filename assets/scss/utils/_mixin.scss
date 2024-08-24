@@ -1,0 +1,9 @@
+@mixin btn-style {
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+}
+@mixin mq-min-510{
+    @media (min-width: 510px) {
+        @content;
+    }
+}
